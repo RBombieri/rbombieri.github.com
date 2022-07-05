@@ -4,17 +4,17 @@ $(document).ready(listo);
 
 function listo() 
 {
-	$(".hamb").click(function(e) {
+	$(".pagelines").click(function(e) {
 		e.preventDefault();
 	$("header .container nav").toggleClass("open");
-	$(".hamb i").toggleClass("fa-xmark");
+	$(".pagelines i").toggleClass("fa-xmark");
 	
 	});
 
 	$("header .container nav a").click(function(){
 
 		$("header .container nav").removeClass("open");
-		$(".hamb i").removeClass("fa-xmark");
+		$(".pagelines i").removeClass("fa-xmark");
 		
 		var dev = $(this).attr("href");
 
