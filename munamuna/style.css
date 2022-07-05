@@ -4,8 +4,9 @@
 
 body
 {
-	font-family: "Roboto";
+	font-family: 'Nunito', sans-serif;
 	font-size: 13px;
+	background-color: rgb(233, 255, 205);
 }
 
 a
@@ -46,15 +47,17 @@ header .container .logo
 header .container nav a
 {
 	color: rgb(255, 255, 255);
-
+	font-size: large;
 	text-decoration: solid;
 	margin: 0 15px 0 15px;
+	font-size: 1.2em;
 }
 
-header .container .hamb
+header .container .pagelines
 	{
 		display: none;
 	}
+
 
 	footer.seccion
 {
@@ -77,12 +80,14 @@ footer .barra-footer
 footer .logo-footer
 {
 	width: 70%;
+	
 }
 
 footer p
 {
 	color: white;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
+	
 }
 
 footer a
@@ -136,6 +141,12 @@ footer .redes a
 	font-weight: bold;
 }
 
+.boton.boton-vermas:hover
+{
+	background-color: rgba(165,120,242,1);
+	color: black;
+}
+
 .boton.boton-blanco
 {
 	background-color: white;
@@ -145,17 +156,23 @@ footer .redes a
 	border: 1px solid rgba(165,120,242,1);
 }
 
+.boton.boton-blanco:hover
+{
+	background-color: rgba(165,120,242,1);
+	color: black;
+}
+
 .boton.boton-negro
 {
 	background-color: black;
-	color: white;
+	color: rgba(165,120,242,1);
 	font-size: 20px;
 	font-weight: bold;
 }
 
 .boton.boton-negro:hover
 {
-	background-color: white;
+	background-color: rgba(165,120,242,1);
 	color: black;
 }
 
@@ -167,7 +184,7 @@ footer .redes a
 
 .cuadrado-perfecto
 {
-	width: 1fr 1fr 1fr;
+	
 	padding-bottom: 100%;
 	position: relative;
 	text-align: center;
@@ -183,6 +200,7 @@ footer .redes a
 	position: absolute;
 	top: 0;
 	left: 0;
+	border-radius: 1px solid black;
 }
 
 .container
@@ -218,6 +236,14 @@ footer .redes a
 .columna-25
 {
 	width: 25%;
+}
+
+.columna-32
+{
+	box-sizing: content-box;
+	width: 240px;
+	border-radius: 1px solid black;
+
 }
 
 .columna-33
@@ -258,8 +284,9 @@ footer .redes a
 #inicio img
 {
 	width: 100%;
-	height: max-content: 500px ;
-	display: block;
+	height: 100%;
+	display: flexbox;
+
 }
 
 #inicio .bloque-inicio
@@ -276,14 +303,16 @@ footer .redes a
 #inicio .bloque-inicio h1
 {
 	color: white;
-	font-size: 35px;
+	font-size: 60px;
+	text-align: center;
+	
 
 }
 
 #inicio .bloque-inicio p
 {
 	color: white;
-	font-size: 16px;
+	font-size: 30px;
 
 }
 
@@ -297,42 +326,43 @@ footer .redes a
 
 #nosotros p
 {
-	color: rgb(236, 13, 13);
+	color: white;
 	text-align: center;
-	font-size: 16px;
+	font-size: 20px;
 }
 
-#servicios .bloque-servicio
+#temporada .bloque-temporada
 {
 	border: 1px solid grey;
 }
 
-#servicios .bloque-servicio .bloque-img-servicio img
+#temporada .bloque-temporada .bloque-img-temporada img
 {
+	text-align: center;
 	width: 100%;
 }
 
-#servicios .bloque-servicio .bloque-img-servicio.cuadrado-perfecto
+#temporada .bloque-temporada .bloque-img-temporada.cuadrado-perfecto
 {
-	padding-bottom: 56.25%;
+	padding-bottom: 100%;
 }
 
-#servicios .bloque-servicio .bloque-contenido-servicio
+#temporada .bloque-temporada .bloque-contenido-temporada
 {
+	background-color: rgba(165,120,242,1);
 	padding: 15px;
+	text-align: center;
+	border-bottom: 0px;
+	
 	
 }
 
-#servicios .bloque-servicio .bloque-contenido-servicio h3
+#temporada .bloque-temporada .bloque-contenido-temporada h3
 {
 	margin-top: 0;
 	font-size: 25px;
-	
-}
-
-#galeria
-{
-
+	text-align: center;
+		
 }
 
 #galeria h4
@@ -431,10 +461,10 @@ footer .redes a
 
 	header .container nav
 	{
-		position: fixed;
+		position:fixed;
 		width: 100%;
 		height: 100%;
-		background-color: white;
+		background-color: rgb(192, 124, 231);
 		padding-top: 80px;
 		padding-bottom: 80px;
 		padding-right: 15px;
@@ -460,14 +490,15 @@ footer .redes a
 
 	}
 
-	header .container .hamb
+	header .container .pagelines
 	{
-		display: block;
+		display:block;
 		font-size: 40px;
-		color: rgb(158, 109, 197);
+		color: rgb(206,254,149);
 		position: relative;
 	}
 
+	
 	form .boton.boton-negro
 	{
 		width: 100%;
@@ -486,6 +517,13 @@ footer .redes a
 	.container
 	{
 		width: 100%;
+	}
+
+	.columna
+	{
+	padding-right: 1px;
+	padding-left: 1px;
+	margin-top: 15px;
 	}
 
 	.columna-mobile-100
